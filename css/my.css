@@ -1,0 +1,45 @@
+.bonusCpt {
+	min-width: 60px;
+}
+.vertical-mid td {
+	vertical-align: middle !important;
+} 
+.inline {
+	display: inline-block;
+}
+.spoiler a{
+ font-size: 20px;
+ color: #000000;
+ text-decoration: none;
+}
+.spoiler:hover {
+     cursor: pointer;
+}
+.spoiler {
+     margin: 10px 0;
+}
+.footer p{font-size: 10px;}
+#right_menu {
+	position: fixed;
+	display: block;
+	top: 50px;
+	right: 20px;
+	z-index: 9999;
+}
+#all_spoilers, #calc_all {
+	width: 100%;
+}
+.btn-default.pull-left {
+	position: absolute;
+}
+.spoiler-wrapper.input-group-sm>.form-control, .input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn
+{
+	padding: 5px;
+}
+td.col-xs-6 table div  span{ display: none !important} 
+td.col-xs-6 td:first-child table div span { display: table-cell !important}
+td.col-xs-6 table { margin: 0 2px}
+a[href^="http://virtonomica.ru"]::after {
+ padding: 0 0 0 5px;
+ content: url(../img/virta.ico);
+ }

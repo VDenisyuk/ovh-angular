@@ -1,0 +1,188 @@
+<div class="container">
+<h1 class="text-center"><a target="blank" href="{{factory.href}}">{{factory.name}}</a></h1>
+<br/>
+<input type="hidden" id="assetType" value="{{factory.type}}"/>
+<div class="panel-group" role="tablist" aria-multiselectable="true">
+    <div class="panel panel-info" ng-repeat="s in factory.specs">
+      <div class="panel-heading" role="tab" id="heading{{s.id}}" data-toggle="collapse" data-target="#spec{{s.id}}" aria-expanded="false" aria-controls="spec{{s.id}}">
+        <strong>{{s.name}}</strong>
+        <span ng-repeat="p in s.products" >
+            <a href="{{p.href}}" title="{{p.name}}">
+                <img src="{{p.img}}" align="middle" alt="{{p.name}}.html" title="{{p.name}}"></img>
+            </a>
+            <span ng-show="{{p.bonus}}">{{p.bonus}}%</span>
+        </span>
+      </div>
+      <div id="spec{{s.id}}" class="panel-collapse collapse {{s.id == 1 ? 'in' : ''}}" role="tabpanel" aria-labelledby="heading{{s.id}}">
+        <div class="panel-body">
+        <form class="form-horizontal">
+            <table class="table table-bordered text-center vertical-mid">
+            <tbody>
+            <tr class="warning">
+                <th class="text-center">Тип предприятия </th>
+                <th class="text-center">Специализация </th>
+                <th class="text-center">Сырьё
+                    <br/>
+                    <h5><span class="label label-primary">Общая стоимость <span id="IngTotalPrice" class="badge">0</span></span></h5>
+                </th>
+                <th class="text-center">Выпускаемая продукция</th>
+                <th class="text-center">Прибыль</th>
+            </tr>
+            <tr class="even">
+            <td class="col-xs-2">
+                <img src="img/workshop.gif" title="Фабрика"/>
+                <br/>
+                <p>Работники</p>
+                <div class="input-group input-group-sm"><span class="input-group-addon">#</span>
+                    <input class="form-control " type="text" id="work_quan" placeholder="Количество"/>
+                </div>
+                <div class="input-group input-group-sm"><span class="input-group-addon">$</span>
+                    <input class="form-control " type="text" id="work_salary" placeholder="Зарплата"/>
+                </div>
+                <h4><span class="label label-primary">Квалификация <span id="PersonalQual" class="badge">0</span></span></h4>
+            </td>
+            <td class="col-xs-1">
+                <div id="techDiv" class="input-group input-group-sm"><span class="input-group-addon">Техна</span>
+                    <input class="form-control" type="text" id="tech" placeholder="Уровень"/>
+                </div>
+                <h4><span class="label label-primary">Станки <span id="EquipQuan" class="badge">0</span></span></h4>
+            </td>
+            <td class="col-xs-6">
+                    <table class="inline">
+                        <tbody>
+                        <tr>
+                            <td ng-repeat="c in s.components">
+                                <table>
+                                    <tbody>
+                                    <tr>
+                                        <td>
+                                            <div class="input-group input-group-sm"><span class="input-group-addon">#</span>
+                                                <input class="form-control " type="text" id="Ing_Quality{{c.id}}" placeholder="Качество"/>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div class="input-group input-group-sm"><span class="input-group-addon">$</span>
+                                                <input class="form-control" type="text" id="Ing_Price{{c.id}}" placeholder="Цена"/>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <br/>
+                                            <a href="{{c.href}}" title="{{c.name}}">
+                                                <img src="{{c.img}}" align="middle" alt="{{c.name}}.html" title="{{c.name}}"></img>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span id="Ing_Quantity{{c.id}}">{{c.qty}} ед.</span>
+                                            <input type="hidden" id="Ing_Qty{{c.id}}" value="{{c.qty}}"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td><span id="Ing_TotalPrice{{c.id}}">$1</span>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+            </td>
+            <td class="col-xs-2">
+                <table class="container-fluid">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon bonusCpt" title="Эффективность">Эфф.</span>
+                                <input class="form-control " type="text" id="Eff" placeholder="Эффективность, %" value="100"/>
+                                <span class="input-group-addon">%</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <fieldset>
+                                <div class="input-group input-group-sm">
+                                    <span class="input-group-addon bonusCpt" title="Бонус к качеству">Бонус</span>
+                                    <input class="form-control " type="text" id="Bonus" value="{{s.products[0].bonus}}"/>
+                                    <span class="input-group-addon">%</span>
+                                </div>
+                            </fieldset>
+                        </td>
+                        <td></td>
+                    </tr>
+<!--                     <tr>
+                        <td>
+                            <button id="CorpQ" type="button" class="btn btn-default btn-xs" onclick="setBonus(1, $(this))"> +1%
+                            </button>
+                            <button id="10Q" type="button" class="btn btn-default btn-xs"
+                                    onclick="setBonus(10, $(this));$(this).closest('form').find('#15Q').toggleClass('disabled')">
+                                +10%
+                            </button>
+                            <button id="15Q" type="button" class="btn btn-default btn-xs"
+                                    onclick="setBonus(15, $(this));$(this).closest('form').find('#10Q').toggleClass('disabled')">
+                                +15%
+                            </button>
+                        </td>
+                    </tr> -->
+                    </table>
+                    <table class="container-fluid">
+                    <tr>
+                        <td ng-repeat="p in s.products"><br/>
+                            <a href="{{p.href}}" title="{{p.name}}">
+                                <img src="{{p.img}}" align="middle" alt="{{p.name}}.html" title="{{p.name}}">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td ng-repeat="p in s.products"><span id="Prod_Quantity{{p.id}}">{{p.qty}} ед.</span>
+                            <input type="hidden" id="Prod{{p.id}}_Quantity" value="{{p.productivity}}"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td ng-repeat="p in s.products">
+                            <h4><span class="label label-primary">Кач-во <span id="ProdQual" class="badge">0</span></span></h4>
+                            <h4><span class="label label-primary">C/c <span id="Cost" class="badge">0</span></span></h4>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td class="col-xs-1">
+                <table>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="input-group input-group-sm">
+                                <span class="input-group-addon">$</span>
+                                <input ng-repeat="p in s.products" class="form-control" type="text" id="Sale_Price{{p.id}}" placeholder="Цена"/>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h4><span class="label label-default" id="profit">$0</span></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button id="DoCalc" type="submit" class="btn btn-info">Рассчитать</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+            </tr>
+            </tbody>
+            </table>
+        </form>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
