@@ -30,7 +30,7 @@
             </tr>
             <tr class="even">
             <td class="col-xs-2">
-                <img src="img/workshop.gif" title="Фабрика"/>
+                <span class="workshop sprite"></span>
                 <br/>
                 <p>Работники</p>
                 <div class="input-group input-group-sm"><span class="input-group-addon">#</span>
@@ -111,14 +111,16 @@
                                 </tr>
                                 <tr>
                                         <td><br/>
-                                            <a href="{{factory.animalHref}}" title="{{factory.animalName}}"><img src="{{factory.animalImg}}" alt="{{factory.animalName}}"
-                                                                                               title="{{factory.animalName}}"/></a>
+                                            <a href="{{factory.animalHref}}" title="{{factory.animalName}}">
+                                                <span class="{{factory.animalImg}} sprite"></span>
+                                            </a>
                                         </td>
                                 </tr>
                                 <tr>
-                                        <td><span id="animal_Quantity">{{factory.animalQty}} ед.</span><input type="hidden"
-                                                                                           id="animals" value="{{factory.animalQty}}"/>
-                                        </td>
+                                    <td>
+                                        <span id="animal_Quantity">{{factory.animalQty}} ед.</span>
+                                        <input type="hidden" id="animals" value="{{factory.animalQty}}"/>
+                                    </td>
                                 </tr>
                                 <tr><td>&nbsp;</td></tr>
                             </tbody>
