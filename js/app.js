@@ -1,8 +1,7 @@
 var factoryApp = angular.module('factoryApp', ['ngRoute']);
 
 factoryApp.factory('Factories', function ($http) {
-	console.log('Http get');
-	return $http.get('factory.json');
+	return $http.get('factory.min.json');
 });
 
 factoryApp.config(['$routeProvider','$locationProvider',
