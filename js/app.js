@@ -11,7 +11,8 @@ factoryApp.config(['$routeProvider','$locationProvider',
         templateUrl: 'partials/main.html'
       }).
       when('/production', {
-        templateUrl: 'partials/factoryList.html'
+        templateUrl: 'partials/factoryList.html',
+        controller: 'ProductionCtrl'
       }).
       when('/production/factory/:factoryId', {
         templateUrl: 'partials/factory.html',
