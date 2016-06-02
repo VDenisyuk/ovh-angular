@@ -1,15 +1,13 @@
-<div class="container">
-	<table class="table table-striped">
+<table class="table table-striped">
 		<tbody ng-repeat="cat in categories">
 			<tr><th colspan="8" class="warning text-center">{{cat.name}}</th></tr>
 			<tr ng-repeat="row in cat.rows">
 				<td ng-repeat-start="unit in row track by $index" width="35">
-					<a ng-if="unit.id != ''" target="_blank" href="http://virtonomica.ru/lien/main/industry/unit_type/info/{{unit.id}}.html">
+					<a ng-if="unit.id != ''" href="#/factory/{{unit.id}}">
 						<img src="img/{{unit.type}}.gif" align="middle" alt="{{unit.name}}" title="{{unit.name}}.html"></img>
 					</a>
 				</td>
-				<td ng-repeat-end width="25%"><a ng-if="unit.id != ''" target="_blank" href="http://virtonomica.ru/lien/main/industry/unit_type/info/{{unit.id}}.html">{{unit.name}}</a></td>
+				<td ng-repeat-end width="25%"><a ng-if="unit.id != ''" href="#/factory/{{unit.id}}">{{unit.name}}</a></td>
 			</tr>
 		</tbody>
-	</table>
-</div>
+</table>

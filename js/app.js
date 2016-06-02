@@ -10,35 +10,32 @@ factoryApp.config(['$routeProvider','$locationProvider',
       when('/', {
         templateUrl: 'partials/main.html'
       }).
-      when('/production', {
+      when('/factory', {
         templateUrl: 'partials/factoryList.html',
         controller: 'ProductionCtrl'
       }).
-      when('/production/factory/:factoryId', {
-        templateUrl: 'partials/factory.html',
-        controller: 'FactoryCtrl'
-      }).
-      when('/production/mine/:factoryId', {
-        templateUrl: 'partials/mine.html',
-        controller: 'MineCtrl'
-      }).
-      when('/production/farm/:factoryId', {
-        templateUrl: 'partials/farm.html',
-        controller: 'FarmCtrl'
-      }).
-      when('/production/afarm/:factoryId', {
-        templateUrl: 'partials/afarm.html',
-        controller: 'AFarmCtrl'
+      when('/factory/:factoryId', {
+        templateUrl: function(urlattr){
+                console.log('Go to factory unit partials/factory/' + urlattr.factoryId + '.html');
+                return 'partials/factory/' + urlattr.factoryId + '.html';
+            },
+        controller: 'CalcCtrl'
       }).
       when('/products', {
         templateUrl: 'partials/productList.html',
         controller: 'FactoryCtrl'
       }).
+      when('/product/:productId', {
+        templateUrl: function(urlattr){
+                console.log('Go to product partials/product/' + urlattr.productId + '.html');
+                return 'partials/product/' + urlattr.productId + '.html';
+            },
+        controller: 'CalcCtrl'
+      }).
       otherwise({
         redirectTo: '/'
       });
-
-  }]);
+}]);
 
 //регулятор бонусов
 function setBonus(val, callbtn){
@@ -46,11 +43,11 @@ function setBonus(val, callbtn){
 	callbtn.toggleClass("btn-default").toggleClass("btn-warning");
 	callbtn.closest('form').find('#Bonus').val(parseFloat(callbtn.closest('form').find('#Bonus').val()) + val + '%');
 	callbtn.closest('form').find('#Bonus2').val(parseFloat(callbtn.closest('form').find('#Bonus2').val()) + val + '%');
-}
+};
 
 String.prototype.capitalize = function() {
     return this.charAt(0).toUpperCase() + this.slice(1);
-}
+};
 
 //разделитель разрядов
 function commaSeparateNumber(val){
