@@ -16,7 +16,6 @@ factoryApp.config(['$routeProvider','$locationProvider',
       }).
       when('/factory/:factoryId', {
         templateUrl: function(urlattr){
-              console.log('Go to factory unit partials/factory/' + urlattr.factoryId + '.html');
               return 'partials/factory/' + urlattr.factoryId + '.html';
             },
         controller: 'CalcCtrl'
@@ -27,7 +26,6 @@ factoryApp.config(['$routeProvider','$locationProvider',
       }).
       when('/product/:productId', {
         templateUrl: function(urlattr){
-              console.log('Go to product partials/product/' + urlattr.productId + '.html');
               return 'partials/product/' + urlattr.productId + '.html';
             },
         controller: 'CalcCtrl'

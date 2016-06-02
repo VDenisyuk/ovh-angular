@@ -1,12 +1,12 @@
 factoryApp.controller('CalcCtrl', function ($scope, $routeParams) {
 	angular.element(document).ready(function () {
+	  window.scroll(0, 0);
 	  $('.spoiler-text').hide();
 	  $('.spoiler').click(function(){
 	    $(this).toggleClass("folded").toggleClass("unfolded").next().slideToggle()
 	  });
 	  //открываем первый спойлер
 	  $(".spoiler").first().click();
-
 	  $('form').submit(function(e) {
 	   	// stop form submission
 	   	e.preventDefault();
@@ -31,7 +31,7 @@ factoryApp.controller('CalcCtrl', function ($scope, $routeParams) {
     			ingPrice.push(parseFloat($(this).val().replace(',', '.')) || 0);
     		});
     		var eff			= parseFloat($("#Eff", this).val().replace('%', '')) / 100;
-    		var Sale_Price	= $("#Sale_Price1", this).val();
+    		var Sale_Price	= $("#Sale_Price", this).val();
     		var Sale_Price2	= $("#Sale_Price2", this).val();
 	        			
     		$("input[id^='Ing_Qty']", this).each(function(){
@@ -123,7 +123,7 @@ factoryApp.controller('CalcCtrl', function ($scope, $routeParams) {
 	   	  //себестоимость
 	   	  var zp = work_salary * work_quant;
 	   	  var exps = IngTotalCost + zp * 1.1 ;
-	   	    			
+	   	   			
 	   	  if (envdTax > 1) {
 	   	    $("#Cost", this).text( "$" + commaSeparateNumber((exps / Prod_Quantity).toFixed(2)) + " ($" +commaSeparateNumber(((exps / Prod_Quantity)*envdTax).toFixed(2))+ ")" );
 	   	    if ( $("#Bonus2", this).val() ) {
@@ -156,6 +156,9 @@ factoryApp.controller('CalcCtrl', function ($scope, $routeParams) {
     	  for (var i = 0; i < num; i++) {
     	    ingCost[i] = ingTotalPrice[i] / IngTotalCost * 100;
     	  };
+    	  $("div[id^='ingWidth']", this).each(function(index){
+    	  	$(this).width(ingCost[index] + "%");
+    	  });
     	} else {
     	  $(this).find("#techDiv").addClass("has-error");
     	};
