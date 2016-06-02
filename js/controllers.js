@@ -163,7 +163,7 @@ factoryApp.controller('CalcCtrl', function ($scope, $routeParams) {
   })
 });
 
-factoryApp.controller('ProductionCtrl', ['$scope','$http', function($scope, $http) {
+factoryApp.controller('FactoryCtrl', ['$scope','$http', function($scope, $http) {
  	$http.get('js/factories.json').then(function(data) {
 		var categories = [];
 		data.data.forEach(function (cat){
@@ -179,6 +179,35 @@ factoryApp.controller('ProductionCtrl', ['$scope','$http', function($scope, $htt
 						rows[i][j] = {'id':'', 'name':''};
 					} else {
 						rows[i][j] = cat.units[i*4+j];
+					}
+				};
+			};
+			category.rows = rows;
+			categories.push(category);
+		});
+		$scope.categories = categories;
+	},
+	function(err){
+		console.log(err);
+	});
+}]);
+
+factoryApp.controller('ProductCtrl', ['$scope','$http', function($scope, $http) {
+ 	$http.get('js/products.json').then(function(data) {
+		var categories = [];
+		data.data.forEach(function (cat){
+			var rowQty = Math.ceil(cat.products.length / 4);
+			var rows = [];
+			var category = {};
+			category.name = cat.name;
+			category.products = cat.products;
+			for (var i = 0; i < rowQty; i++) {
+				rows[i] = [];
+				for (var j = 0; j < 4; j++) {
+					if (cat.products[i*4+j] == undefined) {
+						rows[i][j] = {'id':'', 'name':''};
+					} else {
+						rows[i][j] = cat.products[i*4+j];
 					}
 				};
 			};
