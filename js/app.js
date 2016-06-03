@@ -1,14 +1,11 @@
 var factoryApp = angular.module('factoryApp', ['ngRoute']);
 
-factoryApp.factory('Factories', function ($http) {
-	return $http.get('factory.min.json');
-});
-
 factoryApp.config(['$routeProvider','$locationProvider',
   function($routeProvider, $locationProvider) {
     $routeProvider.
       when('/', {
-        templateUrl: 'partials/main.html'
+        templateUrl: 'partials/main.html',
+        controller: 'MainCtrl'
       }).
       when('/factory', {
         templateUrl: 'partials/factoryList.html',
