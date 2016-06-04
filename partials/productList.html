@@ -2,11 +2,12 @@
 		<tbody ng-repeat="cat in categories">
 			<tr><th colspan="8" class="warning text-center">{{cat.name}}</th></tr>
 			<tr ng-repeat="row in cat.rows">
-				<td ng-repeat="unit in row track by $index">
+				<td ng-repeat-start="unit in row track by $index" style="width:48px">
 					<a ng-if="unit.id != ''" href="#/product/{{unit.id}}">
-						<img class="product-img" src="img/{{unit.img}}.gif" align="middle" alt="{{unit.name}}" title="{{unit.name}}.html"></img>{{unit.name}}
+						<img src="img/{{unit.img}}.gif" alt="{{unit.name}}" title="{{unit.name}}.html"></img>
 					</a>
 				</td>
+				<td ng-repeat-end><a ng-if="unit.id != ''" href="#/product/{{unit.id}}">{{unit.name}}</a></td>
 			</tr>
 		</tbody>
 </table>

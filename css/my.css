@@ -46,6 +46,6 @@ a[href^="http://virtonomica.ru"]::after {
  .container-mtop {
  	margin-top: 60px;
  }
- .product-img {
- 	margin-right: 10px;
+ a, a:hover, a:active, a:focus {
+ 	outline: 0;
  }
