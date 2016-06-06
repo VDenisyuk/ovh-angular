@@ -10,7 +10,6 @@ factoryApp.controller('CalcCtrl', ['$rootScope', '$scope', '$routeParams', funct
 	  $('.spoiler').click(function(){
 	    $(this).toggleClass("folded").toggleClass("unfolded").next().slideToggle()
 	  });
-	  //открываем первый спойлер
 	  $(".spoiler").first().click();
 	  $('form').submit(function(e) {
 	   	// stop form submission
