@@ -1,9 +1,17 @@
 factoryApp.controller('MainCtrl', ['$rootScope', '$scope', function($rootScope, $scope) {
   $rootScope.header = "Главная | OpenVirtaHelper";
+  $('li.link').removeClass("active");
+  $('li.link:nth-child(1)').toggleClass("active");
 }]);
 
 factoryApp.controller('CalcCtrl', ['$rootScope', '$scope', '$routeParams', function ($rootScope, $scope, $routeParams) {
 	$rootScope.header = $("h1.text-center").text()+" | OpenVirtaHelper";
+	$('li.link').removeClass("active");
+	if ($("h1.text-center").hasClass('product-name')) {
+		$('li.link:nth-child(3)').toggleClass("active");
+	} else {
+		$('li.link:nth-child(2)').toggleClass("active");
+	};	
 	angular.element(document).ready(function () {
 	  window.scroll(0, 0);
 	  $('.spoiler-text').hide();
@@ -241,6 +249,8 @@ factoryApp.controller('CalcCtrl', ['$rootScope', '$scope', '$routeParams', funct
 
 factoryApp.controller('FactoryCtrl', ['$rootScope', '$scope','$http', function($rootScope, $scope, $http) {
  	$rootScope.header = "Заводы | OpenVirtaHelper";
+ 	$('li.link').removeClass("active");
+ 	$('li.link:nth-child(2)').toggleClass("active");
  	$http.get('js/factories.json').then(function(data) {
 		var categories = [];
 		data.data.forEach(function (cat){
@@ -263,6 +273,7 @@ factoryApp.controller('FactoryCtrl', ['$rootScope', '$scope','$http', function($
 			categories.push(category);
 		});
 		$scope.categories = categories;
+		// spinner.stop();
 	},
 	function(err){
 		console.log(err);
@@ -271,6 +282,8 @@ factoryApp.controller('FactoryCtrl', ['$rootScope', '$scope','$http', function($
 
 factoryApp.controller('ProductCtrl', ['$rootScope', '$scope','$http', function($rootScope, $scope, $http) {
  	$rootScope.header = "Товары | OpenVirtaHelper";
+ 	$('li.link').removeClass("active");
+ 	$('li.link:nth-child(3)').toggleClass("active");
  	$http.get('js/products.json').then(function(data) {
 		var categories = [];
 		data.data.forEach(function (cat){

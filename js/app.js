@@ -51,10 +51,3 @@ function commaSeparateNumber(val){
 	}
 	return val;
 };
-
-angular.element(document).ready(function () {
-  $('li.link').click(function(){
-    $('li.link').removeClass("active");
-    $(this).toggleClass("active");
-  })
-});
