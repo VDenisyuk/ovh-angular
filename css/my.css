@@ -49,3 +49,7 @@ a[href^="http://virtonomica.ru"]::after {
  a, a:hover, a:active, a:focus {
  	outline: 0;
  }
+ .github {
+ 	margin-top: 15px;
+ 	margin-left: 30px;
+ }

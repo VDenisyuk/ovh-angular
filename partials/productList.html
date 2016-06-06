@@ -4,7 +4,8 @@
 			<tr ng-repeat="row in cat.rows">
 				<td ng-repeat-start="unit in row track by $index" style="width:48px">
 					<a ng-if="unit.id != ''" href="#/product/{{unit.id}}">
-						<img src="img/{{unit.img}}.gif" alt="{{unit.name}}" title="{{unit.name}}.html"></img>
+						<!-- <img src="img/{{unit.img}}.gif" alt="{{unit.name}}" title="{{unit.name}}.html"></img> -->
+						<span class="{{unit.img}} sprite"></span>
 					</a>
 				</td>
 				<td ng-repeat-end><a ng-if="unit.id != ''" href="#/product/{{unit.id}}">{{unit.name}}</a></td>
