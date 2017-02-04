@@ -548,6 +548,11 @@
         "type": "animalfarm"
       },
       {
+        "name": "Пасека",
+        "id": "423140",
+        "type": "animalfarm"
+      },
+      {
         "name": "Плантация",
         "id": "2420",
         "type": "orchard"
