@@ -1,0 +1,59 @@
+﻿<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+		<meta name="robots" content="noindex, nofollow"/>
+		<meta name="googlebot" content="noindex, nofollow"/>
+		<script src="lib/vue.js"></script>
+		<script src="factories.js"></script>
+		<link href="factories_fb.css" rel="stylesheet" media="all">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<title>Flexbox Hello World</title>
+	</head>
+	<body>
+		<div class="container">
+			<category v-for="category in categories" :category = "category"></category>
+		</div>
+		<script>
+
+		Vue.component('comp', {
+			template:'<li class="card cardGroup__card">\
+						<div class="card__price cardGroup__cardTitle">\
+							<img :src="imgUrl"><a :href="linkUrl">{{comp.name}}</a>\
+						</div>\
+						<div class="card__description cardGroup__cardDescription">\
+							{{comp.name}}<img :src="imgUrl">\
+						</div>\
+					  </li>',
+			props: ['comp'],
+			computed: {
+				imgUrl: function () {
+				  return 'img/'+this.comp.type+'.gif'
+				},
+				linkUrl: function () {
+				  return 'factory/'+this.comp.id
+				}
+			  }
+		});
+		
+		Vue.component('category', {
+			template:'<div><div class="card__category">{{category.name}}</div>\
+						<ul class="cardGroup">\
+						  <comp v-for="comp in category.units" :comp = "comp"></comp>\
+						</ul></div>',
+			props: ['category']
+		});
+		
+		Vue.component('factory-list', {
+			template:'<div>\
+							<category v-for="category in categories" :category = "category"></category>\
+						</div>',
+			props: ['categories']
+		});
+		
+		var vm = new Vue({
+			el: '.container',
+			data: {categories:categories}
+		})
+		</script>
+	</body>
+</html>
