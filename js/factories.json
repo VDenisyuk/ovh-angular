@@ -5,32 +5,32 @@
       {
         "name": "Авиасборочное предприятие",
         "id": "380082",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод авиадвигателей",
         "id": "380079",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод авиаинтерьера",
         "id": "380076",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод авиаконструкций",
         "id": "380073",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод авиашасси",
         "id": "380085",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству авионики",
         "id": "380091",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -40,37 +40,37 @@
       {
         "name": "Автомобильный завод",
         "id": "2427",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Автосборочный завод",
         "id": "370130",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод автомобильных принадлежностей",
         "id": "422748",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод авторемонтного оборудования",
         "id": "422736",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству водных скутеров",
         "id": "15352",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству мотоциклов",
         "id": "2436",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству электромобилей",
         "id": "423313",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -80,67 +80,67 @@
       {
         "name": "Алмазный карьер",
         "id": "2396",
-        "type": "mine"
+        "img": "mine"
       },
       {
         "name": "Бокситный карьер",
         "id": "1869",
-        "type": "mine"
+        "img": "mine"
       },
       {
         "name": "Глиняный карьер",
         "id": "2401",
-        "type": "mine"
+        "img": "mine"
       },
       {
         "name": "Железнорудная шахта",
         "id": "2397",
-        "type": "mine"
+        "img": "mine"
       },
       {
         "name": "Золотодобывающее предприятие",
         "id": "2399",
-        "type": "mine"
+        "img": "mine"
       },
       {
         "name": "Кремниевый карьер",
         "id": "2402",
-        "type": "mine"
+        "img": "mine"
       },
       {
         "name": "Медный рудник",
         "id": "370082",
-        "type": "mine"
+        "img": "mine"
       },
       {
         "name": "Солевая шахта",
         "id": "2398",
-        "type": "mine"
+        "img": "mine"
       },
       {
         "name": "Титановый рудник",
         "id": "380061",
-        "type": "mine"
+        "img": "mine"
       },
       {
         "name": "Угольная шахта",
         "id": "2400",
-        "type": "mine"
+        "img": "mine"
       },
       {
         "name": "Шахта по добыче марганца",
         "id": "7102",
-        "type": "mine"
+        "img": "mine"
       },
       {
         "name": "Шахта по добыче полиметаллической руды",
         "id": "423283",
-        "type": "mine"
+        "img": "mine"
       },
       {
         "name": "Шахта по добыче хрома",
         "id": "7096",
-        "type": "mine"
+        "img": "mine"
       }
     ]
   },
@@ -150,22 +150,22 @@
       {
         "name": "Лесопилка",
         "id": "2071",
-        "type": "sawmill"
+        "img": "sawmill"
       },
       {
         "name": "Мебельная фабрика",
         "id": "2413",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика детской мебели",
         "id": "423641",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Целлюлозно-бумажный комбинат",
         "id": "2407",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -175,77 +175,77 @@
       {
         "name": "Ателье пошива одежды",
         "id": "422211",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод детской одежды",
         "id": "423665",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод кожаной обуви",
         "id": "423194",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Мануфактура национальной одежды",
         "id": "422692",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Обувная фабрика",
         "id": "2415",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Текстильная фабрика",
         "id": "422911",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Ткацкая фабрика",
         "id": "2414",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Трикотажная фабрика",
         "id": "402000",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика игрушек",
         "id": "2416",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика нижнего белья",
         "id": "312812",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика одежды",
         "id": "2412",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика по производству ковров",
         "id": "422905",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика постельного белья",
         "id": "312806",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Хлопкоочистительный завод",
         "id": "312800",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Чулочно-носочная фабрика",
         "id": "422473",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -255,32 +255,32 @@
       {
         "name": "Завод запчастей",
         "id": "370118",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод топливного оборудования",
         "id": "422730",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Машиностроительный завод",
         "id": "2409",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Станкостроительный завод",
         "id": "2438",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Тракторный завод",
         "id": "2437",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Электромеханический завод",
         "id": "370100",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -290,62 +290,62 @@
       {
         "name": "Завод медицинских антисептиков",
         "id": "422583",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод медицинского инструментария",
         "id": "359870",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод медицинского оборудования",
         "id": "359864",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод медицинской электроники",
         "id": "422455",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству косметики",
         "id": "303312",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод предметов детской гигиены",
         "id": "423659",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Парфюмерная фабрика",
         "id": "16024",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика биопрепаратов",
         "id": "359882",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика лекарственных компонентов",
         "id": "359876",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика парфюмерных эссенций",
         "id": "16012",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика средств гигиены",
         "id": "359894",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фармацевтический завод",
         "id": "359888",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -355,32 +355,32 @@
       {
         "name": "Завод по выплавке титана",
         "id": "380067",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по обработке цветных металлов",
         "id": "7112",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод сверхлегких сплавов",
         "id": "370094",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Медеплавильный комбинат",
         "id": "370088",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Металлургический завод",
         "id": "2403",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Обогатительная фабрика",
         "id": "423289",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -390,7 +390,7 @@
       {
         "name": "Фабрика элитных интерьеров",
         "id": "124",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -400,7 +400,7 @@
       {
         "name": "Нефтедобывающее предприятие",
         "id": "2395",
-        "type": "oilpump"
+        "img": "oilpump"
       }
     ]
   },
@@ -410,102 +410,102 @@
       {
         "name": "Вискокурня",
         "id": "422565",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод глубокой заморозки продуктов",
         "id": "423394",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод готовых завтраков",
         "id": "422559",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод детского питания",
         "id": "423647",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по переработке оливок",
         "id": "422056",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству ПБП",
         "id": "15769",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству прохладительных напитков",
         "id": "3903",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству специй",
         "id": "16018",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству сыра",
         "id": "373221",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Колбасный завод",
         "id": "1855",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Кофеобжарочная фабрика",
         "id": "380009",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Ликероводочный завод",
         "id": "1906",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Маслозавод",
         "id": "15757",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Молокозавод",
         "id": "1891",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Пивоваренный завод",
         "id": "2421",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Плодоовощной завод",
         "id": "15763",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Соевая фабрика",
         "id": "401982",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Хлебозавод",
         "id": "2422",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Чайная мануфактура",
         "id": "401988",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Шоколадная фабрика",
         "id": "2330",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -515,12 +515,12 @@
       {
         "name": "Жиротопный завод",
         "id": "423489",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по переработке рыбы",
         "id": "335200",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -530,42 +530,42 @@
       {
         "name": "Завод по производству вощины",
         "id": "423170",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Земледельческая ферма",
         "id": "2119",
-        "type": "farm"
+        "img": "farm"
       },
       {
         "name": "Коровник",
         "id": "2044",
-        "type": "animalfarm"
+        "img": "animalfarm"
       },
       {
         "name": "Овцеферма",
         "id": "2419",
-        "type": "animalfarm"
+        "img": "animalfarm"
       },
       {
         "name": "Пасека",
         "id": "423140",
-        "type": "apiary"
+        "img": "apiary"
       },
       {
         "name": "Плантация",
         "id": "2420",
-        "type": "orchard"
+        "img": "orchard"
       },
       {
         "name": "Птицеферма",
         "id": "2418",
-        "type": "animalfarm"
+        "img": "animalfarm"
       },
       {
         "name": "Свиноферма",
         "id": "2417",
-        "type": "animalfarm"
+        "img": "animalfarm"
       }
     ]
   },
@@ -575,17 +575,17 @@
       {
         "name": "Завод керамических материалов",
         "id": "423319",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Керамический завод",
         "id": "2428",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Стекольный завод",
         "id": "2408",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -595,12 +595,12 @@
       {
         "name": "Судостроительная верфь",
         "id": "335220",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Яхтостроительный завод",
         "id": "123",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -610,7 +610,7 @@
       {
         "name": "Фабрика общественных интерьеров",
         "id": "373203",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -620,107 +620,107 @@
       {
         "name": "Завод бытовой техники",
         "id": "7120",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод бытовых изделий",
         "id": "2410",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод детских колясок",
         "id": "423635",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод металлической посуды",
         "id": "423182",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству велосипедов",
         "id": "2431",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству зонтов",
         "id": "16042",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству кухонных плит",
         "id": "373215",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству посудомоечных машин",
         "id": "373227",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод портативной электроники",
         "id": "423653",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод садового инвентаря",
         "id": "422443",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод спортивного инвентаря",
         "id": "15340",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод спортивного оборудования",
         "id": "15346",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод фототехники",
         "id": "2429",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод электроинструментов",
         "id": "370112",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Мануфактура по производству сигар",
         "id": "422207",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Сувенирная мануфактура",
         "id": "13709",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Табачная фабрика",
         "id": "422206",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Типография",
         "id": "2411",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика корма для животных",
         "id": "422208",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика кухонной мебели",
         "id": "373209",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика развивающих игрушек",
         "id": "423671",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -730,42 +730,42 @@
       {
         "name": "Завод автомобильной химии",
         "id": "422577",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод биодизеля",
         "id": "423869",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод бытовой химии",
         "id": "2404",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод органического синтеза",
         "id": "422571",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Нефтемаслозавод",
         "id": "370124",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Нефтеперерабатывающий завод",
         "id": "422724",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Химический завод",
         "id": "2405",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Шинный завод",
         "id": "2406",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -775,132 +775,132 @@
       {
         "name": "Аккумуляторный завод",
         "id": "423301",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод автосигнализаций",
         "id": "423176",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод аудиоаппаратуры",
         "id": "2432",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод видеоаппаратуры",
         "id": "3891",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод климатической техники",
         "id": "370106",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод коммуникационного оборудования",
         "id": "423751",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод компьютерной техники",
         "id": "423307",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод компьютерных аксессуаров",
         "id": "423384",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству GPS-навигаторов",
         "id": "3840",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству компьютеров",
         "id": "2433",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству кофе-машин",
         "id": "380015",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству смартфонов",
         "id": "422210",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству стиральных машин",
         "id": "3878",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству телевизоров",
         "id": "422449",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству холодильников",
         "id": "2424",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод по производству чайников",
         "id": "423125",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод светотехники",
         "id": "422467",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод цифровой фото и видео техники",
         "id": "423373",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод электронных компонентов",
         "id": "2423",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Микропроцессорный завод",
         "id": "423295",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Подразделение по сборке IT-оборудования",
         "id": "423788",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Приборостроительный завод",
         "id": "2434",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика игровых консолей",
         "id": "423188",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика по производству мобильных телефонов",
         "id": "2435",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Фабрика производства светодиодов",
         "id": "422209",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Электроламповый завод",
         "id": "422461",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -910,27 +910,27 @@
       {
         "name": "Завод по монтажу энергоблоков",
         "id": "422160",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод теплообменного оборудования",
         "id": "422148",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод угольного оборудования",
         "id": "422154",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Завод экологического оборудования",
         "id": "422742",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Энергомашиностроительный завод",
         "id": "422142",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   },
@@ -940,27 +940,27 @@
       {
         "name": "Гранильная фабрика",
         "id": "2439",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Студия декора",
         "id": "355093",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Студия обработки жемчуга",
         "id": "380021",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Часовой завод",
         "id": "2425",
-        "type": "workshop"
+        "img": "workshop"
       },
       {
         "name": "Ювелирный завод",
         "id": "2426",
-        "type": "workshop"
+        "img": "workshop"
       }
     ]
   }
