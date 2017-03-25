@@ -1,55 +1,83 @@
 .bonusCpt {
-	min-width: 60px;
+    min-width: 60px;
 }
+
 .vertical-mid td {
-	vertical-align: middle !important;
-} 
+    vertical-align: middle !important;
+}
+
 .inline {
-	display: inline-block;
+    display: inline-block;
 }
-.spoiler a{
- font-size: 20px;
- color: #000000;
- text-decoration: none;
+
+.spoiler a {
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
 }
+
 .spoiler:hover {
-     cursor: pointer;
+    cursor: pointer;
 }
+
 .spoiler {
-     margin: 10px 0;
+    margin: 10px 0;
 }
-.footer p{font-size: 10px;}
+
+.footer p {
+    font-size: 10px;
+}
+
 #right_menu {
-	position: fixed;
-	display: block;
-	top: 50px;
-	right: 20px;
-	z-index: 9999;
+    position: fixed;
+    display: block;
+    top: 50px;
+    right: 20px;
+    z-index: 9999;
 }
+
 #all_spoilers, #calc_all {
-	width: 100%;
+    width: 100%;
 }
+
 .btn-default.pull-left {
-	position: absolute;
+    position: absolute;
 }
-.spoiler-wrapper.input-group-sm>.form-control, .input-group-sm>.input-group-addon, .input-group-sm>.input-group-btn>.btn
-{
-	padding: 5px;
+
+.spoiler-wrapper.input-group-sm > .form-control, .input-group-sm > .input-group-addon, .input-group-sm > .input-group-btn > .btn, .unit-div {
+    padding: 5px;
 }
-td.col-xs-6 table div  span{ display: none !important} 
-td.col-xs-6 td:first-child table div span { display: table-cell !important}
-td.col-xs-6 table { margin: 0 2px}
+
+td.col-xs-6 table div span {
+    display: none !important
+}
+
+td.col-xs-6 td:first-child table div span {
+    display: table-cell !important
+}
+
+td.col-xs-6 table {
+    margin: 0 2px
+}
+
 a[href^="http://virtonomica.ru"]::after {
- padding: 0 0 0 5px;
- content: url(../img/virta.ico);
- }
- .container-mtop {
- 	margin-top: 60px;
- }
- a, a:hover, a:active, a:focus {
- 	outline: 0;
- }
- .github {
- 	margin-top: 15px;
- 	margin-left: 30px;
- }
+    padding: 0 0 0 5px;
+    content: url(../img/virta.ico);
+}
+
+.container-mtop {
+    margin-top: 60px;
+}
+
+a, a:hover, a:active, a:focus {
+    outline: 0;
+}
+
+.github {
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.category-header {
+    padding: 10px 0;
+}

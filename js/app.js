@@ -8,7 +8,7 @@ factoryApp.config(['$routeProvider','$locationProvider',
         controller: 'MainCtrl'
       }).
       when('/factory', {
-        templateUrl: 'partials/factoryList.html',
+        templateUrl: 'partials/unitList.html',
         controller: 'FactoryCtrl'
       }).
       when('/factory/:factoryId', {
@@ -18,7 +18,7 @@ factoryApp.config(['$routeProvider','$locationProvider',
         controller: 'CalcCtrl'
       }).
       when('/products', {
-        templateUrl: 'partials/productList.html',
+        templateUrl: 'partials/unitList.html',
         controller: 'ProductCtrl'
       }).
       when('/product/:productId', {
